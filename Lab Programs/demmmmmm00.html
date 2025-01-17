@@ -4,28 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDes Lab_04_C (HTML)</title>
+    <title>Cyberpunk Form</title>
     <style>
         body {
-            font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(120deg, #020024, #090979, #00d4ff);
+            color: #fff;
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
 
         h1 {
             text-align: center;
-            color: #666;
-            margin-top: 20px;
+            font-size: 3rem;
+            color: #00ffe7;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+            margin-top: 30px;
         }
 
         form {
-            background-color: #ffffff;
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ffe7;
+            box-shadow: 0 0 20px #00ffe7;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 20px;
+            overflow: hidden;
         }
 
         table {
@@ -34,8 +40,10 @@
         }
 
         label {
-            color: #009999;
-            font-weight: bold;
+            display: block;
+            font-size: 1.2rem;
+            color: #f9f9f9;
+            text-shadow: 0 0 5px #ff00ff;
         }
 
         input[type="text"],
@@ -45,45 +53,41 @@
         select {
             width: 100%;
             padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ff00ff;
             border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            box-shadow: 0 0 10px #ff00ff;
         }
 
         textarea {
             resize: vertical;
         }
 
-        button {
-            padding: 10px 15px;
-            background-color: #009999;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #007777;
-        }
-
+        button,
         input[type="button"] {
-            width: auto;
             padding: 10px 20px;
-            background-color: #009999;
-            color: white;
+            background: linear-gradient(45deg, #ff00ff, #00ffe7);
+            color: #000;
+            font-weight: bold;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-shadow: 0 0 5px #000;
+            box-shadow: 0 0 15px #00ffe7, 0 0 15px #ff00ff;
         }
 
+        button:hover,
         input[type="button"]:hover {
-            background-color: #007777;
+            background: linear-gradient(45deg, #00ffe7, #ff00ff);
+            box-shadow: 0 0 20px #00ffe7, 0 0 20px #ff00ff;
         }
 
         input[type="radio"],
         input[type="checkbox"] {
-            margin-right: 5px;
+            margin-right: 10px;
+            accent-color: #ff00ff;
         }
 
         td {
@@ -93,11 +97,27 @@
         td[colspan="2"] {
             text-align: center;
         }
+
+        td {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .glow-text {
+            color: #00ffe7;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #ff00ff;
+        }
+
+        ::placeholder {
+            color: #888;
+            font-style: italic;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Create Account</h1>
+    <h1>CYBERFORM 2077</h1>
     <form>
         <table>
             <tr>
@@ -123,58 +143,53 @@
                 </td>
                 <td>
                     <label for="confPass">Confirm Password*</label>
-                    <input placeholder="Enter your password again" type="text" id="confPass" name="confPass">
+                    <input placeholder="Confirm your password" type="text" id="confPass" name="confPass">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label>Gender:</label><br>
+                    <label>Gender:</label>
                     <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
+                    <label for="male" class="glow-text">Male</label>
                     <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
+                    <label for="female" class="glow-text">Female</label>
                 </td>
                 <td>
-                    <label>Hobbies:</label><br>
+                    <label>Hobbies:</label>
                     <input type="checkbox" id="music" name="hobbies" value="music">
-                    <label for="music">Music</label>
+                    <label for="music" class="glow-text">Music</label>
                     <input type="checkbox" id="sports" name="hobbies" value="sports">
-                    <label for="sports">Sports</label>
-                    <input type="checkbox" id="travel" name="hobbies" value="travel">
-                    <label for="travel">Travel</label>
-                    <input type="checkbox" id="movies" name="hobbies" value="movies">
-                    <label for="movies">Movies</label>
+                    <label for="sports" class="glow-text">Sports</label>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="srcInc">Source of Income</label>
                     <select id="srcInc" name="srcInc">
-                        <option disabled selected>Select your source of income</option>
+                        <option disabled selected>Select</option>
                         <option>Employed</option>
                         <option>Unemployed</option>
                     </select>
                 </td>
                 <td>
-                    <label for="income">Income</label><br>
+                    <label for="income">Income</label>
                     <input type="range" id="income" name="income" min="0" max="100" step="10">
-                    <input type="button" name="incomeDisplay" value="20K">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="upFile">Upload Your Profile Picture</label><br>
-                    <button id="upFile" name="upFile">Choose File</button>
+                    <label for="upFile">Upload Profile Picture</label>
+                    <button id="upFile">Choose File</button>
                 </td>
                 <td>
                     <label for="age">Age</label>
-                    <input type="number" id="age" name="age" placeholder="Enter your age">
+                    <input type="number" id="age" name="age">
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <label for="bio">Bio</label><br>
-                    <textarea id="bio" name="bio" placeholder="Type something about you"></textarea>
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" placeholder="Type something cool..."></textarea>
                 </td>
             </tr>
         </table>
