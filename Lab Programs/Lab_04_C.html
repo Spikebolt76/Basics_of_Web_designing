@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDes Lab_04_C (html)</title>
+</head>
+
+<body>
+    <form>
+        <table cellspacing="20" cellpadding="5" align="center" style="border: 1px;">
+            <thead align="Center" style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:gray;">
+                <h1 align="Center" style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:gray;">
+                    Create Account</h1>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="fname"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Full
+                            Name*</label><br>
+                        <input placeholder="Enter your first name" type="text" id="fname" name="fname">
+                    </td>
+                    <td>
+                        <label for="lname"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Last
+                            Name*</label><br>
+                        <input placeholder="Enter your Last name" type="text" id="lname" name="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="email"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Email*</label><br>
+                        <input placeholder="Enter your email" type="text" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Password*</label><br>
+                        <input placeholder="Enter your password" type="text" id="password" name="password">
+                    </td>
+                    <td>
+                        <label for="lname"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Confirm
+                            Password*</label><br>
+                        <input placeholder="Enter your password again" type="text" id="confPass" name="confPass">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Gender
+                            :</label><br>
+                        <input type="radio" id="gender" name="male">
+                        <label for="gender"> Male</label>
+                        <input type="radio" id="gender" name="female">
+                        <label for="gender"> Female</label>
+                    </td>
+
+                    <td>
+                        <label
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Hobbies
+                            :</label><br>
+                        <label>
+                            <input type="checkbox" id="hobbies" name="music">
+                            Music
+                            <label>
+                                <input type="checkbox" id="hobbies" name="sports">
+                                Sports
+                            </label>
+                            <label>
+                                <input type="checkbox" id="hobbies" name="travel">
+                                Travel
+                            </label>
+                            <label>
+                                <input type="checkbox" id="hobbies" name="movies">
+                                Movies
+                            </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="srcInc"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Source
+                            Of Income</label><br>
+                        <select id="srcInc" name="srcInc">
+                            <option disabled selected>
+                                Select your source of income
+                            </option>
+                            <option>
+                                Employed
+                            </option>
+                            <option>
+                                Unemplyoed
+                            </option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="income"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Income</label>
+                        <input type="range" id="income" name="income">
+                        <input type="button" name="income" id="income" value="20K">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <lable for="upFile"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">
+                            Upload Your Profile Picture</lable><br>
+                        <button id="upFile" name="upFile">Choose File</button>
+                    </td>
+                    <td>
+                        <Label for="age"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Age</Label><br>
+                        <input typer="number" id="age" name="name" placeholder="Enter your age">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="bio"
+                            style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva; color:rgb(0, 153, 153);">Bio</label><br>
+                        <textarea id="bio" name="bio" placeholder="Type something about you"></textarea>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+
+</body>
+
+</html>
