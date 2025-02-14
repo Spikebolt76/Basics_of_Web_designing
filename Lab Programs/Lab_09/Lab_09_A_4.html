@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDes Lab_09_A_2&3 (html/CSS)</title>
+    <!-- Moving div from Left to right, right to bottom, bottom to left and left to top. AND add delay to your animation-->
+    <!-- Change animation-iteration count property of program 2 to run infinite times -->
+
+    <style>
+        .box {
+            padding: 50px;
+            width: 50px;
+            height: 50px;
+            color: aliceblue;
+            background-color: brown;
+            border-radius: 5px;
+            animation-name: moveDiv;
+            position: relative;
+            animation-duration: 6s;
+            animation-delay: 250ms;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moveDiv {
+            0% {
+                background: brown;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background: brown;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    </div>
+
+</body>
+
+</html>

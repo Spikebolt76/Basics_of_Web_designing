@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Designer Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Gujarati:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #222;
+            /* Dark background similar to the reference image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px;
+            /* Ensures margin around the content */
+        }
+
+        .main-content {
+            width: 80%;
+            /* Adjust width to control the content box size */
+            max-width: 1200px;
+            /* Prevents content from being too wide */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-section {
+            background: url("banner2.jpg") center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            min-height: 50vh;
+            /* Adjust height for better visibility */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .head1 {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        form.search-bar input {
+            padding: 10px;
+            border: none;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: white;
+        }
+
+        form.search-bar button {
+            color: white;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 10px;
+            background-color: rgb(246, 74, 74);
+            cursor: pointer;
+        }
+
+        .content-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 50%;
+        }
+
+        .intro-text {
+            margin-top: 0px;
+            margin-left: 50px;
+            margin-bottom: 0px;
+            font-size: 20px;
+            font-family: Outfit;
+            color: black;
+            width: 60%;
+            line-height: 1.4;
+        }
+
+        #designer {
+            font-family: Outfit;
+            margin-left: 50px;
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        #hire {
+            margin-top: 20px;
+            margin-left: 45px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 14px;
+            border: none;
+            background-color: rgb(246, 74, 74);
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .bottom-section {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-content">
+        <div class="top-section">
+            <!-- Header (Logo, Nav, Search Bar) -->
+            <div class="header-container">
+                <img src="uiux.png" class="logo">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">My Intro</a>
+                    <a href="#">Services</a>
+                    <a href="#">
+                        <select>
+                            <option selected>Pages</option>
+                            <option>Extras</option>
+                            <option>My works</option>
+                        </select>
+                    </a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="head1">
+                    <form class="search-bar">
+                        <input type="search" placeholder="Enter Keyword..." name="search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Paragraph below Logo & Nav -->
+            <div class="content-container">
+                <p class="intro-text">Hi, I'm Mary Ateer,</p>
+                <div id="designer">DESIGNER</div>
+                <p class="intro-text">
+                    I'm a passionate UI/UX Designer who loves creating beautiful and user-friendly experiences.
+                </p>
+                <button id="hire">
+                    Hire Me
+                </button>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div
+                style="width: 80%; margin: 20px auto; padding: 20px; background-color: #f4f4f4; border: 2px solid #ccc; border-radius: 10px;">
+                <h2 style="text-align: center;">Test Content Box</h2>
+                <p style="line-height: 1.8;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, sapien vel condimentum
+                    bibendum, justo libero pretium justo, eget scelerisque mauris justo in elit.
+                    Duis luctus, sapien ac ullamcorper tincidunt, nisl ligula suscipit erat, at volutpat metus turpis
+                    sit amet felis.
+                </p>
+                <p style="line-height: 1.8;">
+                    Suspendisse potenti. Integer fermentum tellus at est auctor, non cursus risus elementum. Nam varius,
+                    nunc id suscipit commodo, sem nisl consectetur mauris, at tincidunt tortor
+                    sapien vel sapien. Ut facilisis sem eu libero rhoncus, vitae feugiat tortor gravida.
+                </p>
+                <ul>
+                    <li>Item 1: Random data</li>
+                    <li>Item 2: Some other information</li>
+                    <li>Item 3: Placeholder text</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
