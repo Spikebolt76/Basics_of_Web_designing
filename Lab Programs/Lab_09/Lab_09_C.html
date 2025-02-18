@@ -42,7 +42,7 @@
 
         h2 span {
             display: inline-block;
-            animation: moveAndAnimate 4s ease-in-out infinite alternate;
+            animation: nameAnimate 2s ease-in-out infinite alternate;
         }
 
         h2 span:nth-child(odd) {
@@ -53,31 +53,17 @@
             animation-delay: 0.4s;
         }
 
-        @keyframes moveAndAnimate {
+        @keyframes nameAnimate {
             0% {
-                transform: translateX(-100px) rotateY(0deg) scale(1);
-                opacity: 0;
+                transform: rotateY(0deg) scale(1);
             }
-
-            30% {
-                transform: translateX(0px) rotateY(0deg) scale(1);
-                opacity: 1;
-            }
-
             50% {
-                transform: translateX(0px) rotateY(180deg) scale(1.2);
+                transform: rotateY(180deg) scale(1.2);
             }
-
-            70% {
-                transform: translateX(0px) rotateY(360deg) scale(1);
-            }
-
             100% {
-                transform: translateX(100px) rotateY(360deg) scale(1);
-                opacity: 0;
+                transform: rotateY(360deg) scale(1);
             }
         }
-
 
         .box div {
             position: absolute;
@@ -153,7 +139,6 @@
                 transform: scale(0) translateY(0) rotate(0);
                 opacity: 1;
             }
-
             100% {
                 transform: scale(1.3) translateY(-90px) rotate(360deg);
                 opacity: 0;
@@ -192,5 +177,4 @@
         </div>
     </div>
 </body>
-
 </html>
