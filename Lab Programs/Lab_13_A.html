@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: gray;
+            padding: 20px;
+            border-bottom: 4px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid green;
+            margin-right: 15px;
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(158, 158, 158);
+            color: rgb(5, 143, 5);
+            border-radius: 5px;
+        }
+
+        .content_1 {
+            padding: 20px;
+            border: solid 2px green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 30px;
+        }
+
+        .content_1 img {
+            width: 300px;
+        }
+
+        #readmore {
+            background-color: green;
+            color : white;
+            border : none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        #readmore:hover {
+            opacity: 0.8;
+        }
+
+        #readmore:active {
+            opacity: 0.5;
+        }
+
+        .text_1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="./shopify.jpg" alt="Shopify Logo">
+            </div>
+            <div class="headline">
+                A Perfect E-commerce Solution
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content_1">
+        <div class="windows">
+            <img src="./FckYouWindows.jpg">
+        </div>
+        <div class="text_1">
+            <div>
+                <p>Windows: the only OS that updates right when you need to work, eats your RAM like a starved beast, and still asks if you’re sure you want to open Task Manager. Enjoy forced reboots, bloated spyware, and an OS that slows down just by existing. Meanwhile, Linux users are customizing, optimizing, and actually owning their machines. Stay stuck with Windows—or wake up and embrace real computing.</p>
+            </div>
+            <div>
+                <button id="readmore">Read More</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
