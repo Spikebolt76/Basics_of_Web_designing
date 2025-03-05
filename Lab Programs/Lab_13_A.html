@@ -86,7 +86,7 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
-            margin: 30px;
+            margin: 20px;
         }
 
         .content_1 img {
@@ -95,8 +95,8 @@
 
         #readmore {
             background-color: green;
-            color : white;
-            border : none;
+            color: white;
+            border: none;
             border-radius: 2px;
             cursor: pointer;
             transition: opacity 0.15s;
@@ -119,6 +119,85 @@
             flex-direction: column;
             gap: 20px;
         }
+
+        blockquote {
+            background-color: #e0f2f1;
+            /* Light greenish background */
+            border-left: 4px solid green;
+            /* Left border for emphasis */
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        blockquote ul {
+            list-style-type: disc;
+            /* Ensure bullet points appear */
+            margin-left: 20px;
+            /* Indent the list */
+            padding-left: 20px;
+        }
+
+        blockquote ul li {
+            font-weight: 600;
+            /* Make the text bold */
+            margin-bottom: 5px;
+            /* Add space between items */
+        }
+
+        .content_2 {
+            display: grid;
+            /* grid-template-rows: 200px 200px 200px 200px 200px 200px 100px;
+            grid-template-columns: 200px 200px 200px 200px 200px 200px 100px; */
+            grid-template: auto;
+            grid-gap: 2em;
+
+            margin: 20px;
+        }
+
+        .para {
+            grid-area: 1 / 1 / 5 / 5;
+        }
+
+        .dateBox {
+            border: 2px solid green;
+            background-color: rgb(233, 255, 233);
+            border-radius: 2px;
+            box-shadow: 2px 2px 2px rgb(42, 214, 42);
+
+            padding: 4px;
+            display: inline-block;
+        }
+
+        .newsCover {
+            width: 200px;
+
+        }
+
+        .latestNews {
+            grid-column: 5 / 8;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        .newsCard {
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0px 3px 5px -3px rgb(0, 98, 24),
+                3px 0px 5px -3px rgb(0, 98, 24),
+                0px -3px 5px -3px rgb(0, 98, 24),
+                -3px 0px 5px -3px rgb(0, 98, 24);
+
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+        }
+
     </style>
 </head>
 
@@ -151,7 +230,10 @@
         </div>
         <div class="text_1">
             <div>
-                <p>Windows: the only OS that updates right when you need to work, eats your RAM like a starved beast, and still asks if you’re sure you want to open Task Manager. Enjoy forced reboots, bloated spyware, and an OS that slows down just by existing. Meanwhile, Linux users are customizing, optimizing, and actually owning their machines. Stay stuck with Windows—or wake up and embrace real computing.</p>
+                <p>Windows: the only OS that updates right when you need to work, eats your RAM like a starved beast,
+                    and still asks if you’re sure you want to open Task Manager. Enjoy forced reboots, bloated spyware,
+                    and an OS that slows down just by existing. Meanwhile, Linux users are customizing, optimizing, and
+                    actually owning their machines. Stay stuck with Windows—or wake up and embrace real computing.</p>
             </div>
             <div>
                 <button id="readmore">Read More</button>
@@ -159,6 +241,80 @@
         </div>
     </div>
 
+    <div class="content_2">
+        <div class="para">
+            <h1>Welcome To Our Website !</h1>
+            <p>In the vast digital landscape, servers act as the backbone of the internet, processing millions of
+                requests every second. From simple static websites to complex cloud-based applications, these machines
+                ensure seamless connectivity and data exchange. A single web request can travel through multiple
+                routers, DNS resolvers, and load balancers before reaching its destination. Latency, bandwidth, and
+                packet loss are critical factors that determine network efficiency, while cybersecurity protocols like
+                TLS encryption protect sensitive data in transit.</p>
+            <blockquote>
+                <ul>
+                    <li>Servers efficiently process and distribute data across networks, ensuring seamless communication
+                        and uptime.</li>
+                    <li>Advanced protocols like HTTP/3 and QUIC enhance speed, security, and reliability for modern web
+                        applications.</li>
+                </ul>
+            </blockquote>
+
+            <blockquote>
+                <p>Modern server architectures rely on virtualization, containerization, and distributed computing to optimize performance and scalability. Data centers house thousands of physical servers, running 24/7, consuming vast amounts of energy and requiring sophisticated cooling systems. Edge computing is shifting workloads closer to end-users, reducing response times and improving overall user experience.</p> <br>
+                <p>With the rise of cloud services, traditional on-premises hosting is gradually being replaced by scalable infrastructure-as-a-service (IaaS) solutions. Companies leverage content delivery networks (CDNs) to distribute assets globally, reducing server load and improving accessibility. Meanwhile, protocols like HTTP/3 and QUIC enhance speed and reliability over congested networks. As technology evolves, the demand for high-performance, secure, and resilient server infrastructures continues to grow, shaping the future of the internet.</p>
+            </blockquote>
+        </div>
+
+        <div class="latestNews">
+            <div>
+                <h2>Latest News :</h2>
+            </div>
+
+            <div class="newsCard">
+                
+                <div>
+                    <img class="newsCover" src="./ainews.jpg" style="border-radius: 2px;">
+                </div>
+                <div>
+                    <div class="dateBox">March 05, 2025</div>
+                    <div>
+                        <p>AI Breakthrough: Researchers develop a self-learning AI that optimizes code, reducing execution time by 40% without human intervention.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newsCard">
+                
+                <div>
+                    <img class="newsCover" src="./quantumInternetNews.jpg" style="border-radius: 2px;">
+                </div>
+                <div>
+                    <div class="dateBox">March 05, 2025</div>
+                    <div>
+                        <p>Quantum Internet: Scientists achieve stable quantum entanglement over 500 km, paving the way for ultra-secure, near-instant global communication networks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newsCard">
+                
+                <div>
+                    <img class="newsCover" src="./batterynews.jpg" >
+                </div>
+                <div>
+                    <div class="dateBox">March 05, 2025</div>
+                    <div>
+                        <p>Battery Revolution: New graphene-based battery charges in 60 seconds, lasts 10 years, and eliminates lithium dependency, transforming mobile and EV industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
+
+
+
+
+
+
+#6DCFFF
