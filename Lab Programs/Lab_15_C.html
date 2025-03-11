@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Typography & Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Bootstrap Typography & Images</h1>
+        
+        <p class="text-center">This is an example of an <abbr title="Cascading Style Sheets">CSS</abbr> rule.</p>
+
+        <h3 class="text-primary">Text Alignment</h3>
+        <p class="text-start">Left-aligned text</p>
+        <p class="text-center">Center-aligned text</p>
+        <p class="text-end">Right-aligned text</p>
+
+        <h3 class="text-success">Unstyled List</h3>
+        <ul class="list-unstyled">
+            <li>&#10004; First item</li>
+            <li>&#10004; Second item</li>
+            <li>&#10004; Third item</li>
+        </ul>
+
+        <h3 class="text-danger">Responsive Images</h3>
+        <div class="text-center">
+            <img src="https://via.placeholder.com/600x300" class="img-fluid mb-3" alt="Responsive Image">
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/200" class="img-fluid float-start me-3" alt="Left Image">
+            <img src="https://via.placeholder.com/200" class="img-fluid mx-auto d-block mb-3" alt="Centered Image">
+            <img src="https://via.placeholder.com/200" class="img-fluid float-end ms-3" alt="Right Image">
+        </div>
+        <div class="clearfix"></div>
+
+        <h3 class="text-warning">Thumbnail Image</h3>
+        <div class="text-center">
+            <img src="https://via.placeholder.com/150" class="img-thumbnail" alt="Thumbnail">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

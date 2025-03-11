@@ -1,18 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web_Des Lab_13_B</title>
 
     <script src="https://kit.fontawesome.com/20d1f2c902.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .header {
+            position: relative;
+            width: 100vw;
+            padding: 20px;
+            height: 200px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .head-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .head-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-PNG img {
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .logo-name {
+            font-size: 32px;
+            color: white;
+        }
+
+        #download-button {
+            margin: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(32, 196, 255);
+        }
+
+        
+    </style>
 </head>
 
 <body>
     <div class="container">
         
+        <div class="header">
+            <div class="head-left">
+                <div class="logo-PNG">
+                    <img src="./guitar.png" id="guitar-logo" alt="guitar logo">
+                </div>
+                <div class="logo-name">
+                    <p>SoundAMP</p>
+                </div>
+            </div>
+
+            <div class="head-right">
+                <div>
+                    <div>HTML Templates</div>
+                    <div>More HTML Templates</div>
+                </div>
+                <div>
+                    <button id="download-button">DOWNLOAD NOW</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-reddit"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </body>
 
 </html>

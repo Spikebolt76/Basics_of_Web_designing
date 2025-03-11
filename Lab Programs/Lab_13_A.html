@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
+        .container {
+
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -149,6 +153,7 @@
             display: grid;
             /* grid-template-rows: 200px 200px 200px 200px 200px 200px 100px;
             grid-template-columns: 200px 200px 200px 200px 200px 200px 100px; */
+            
             grid-template: auto;
             grid-gap: 2em;
 
@@ -198,116 +203,123 @@
             padding: 10px;
         }
 
+        @media (max-width: 1240px) {
+            
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="header">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="./shopify.jpg" alt="Shopify Logo">
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./shopify.jpg" alt="Shopify Logo">
+                </div>
+                <div class="headline">
+                    A Perfect E-commerce Solution
+                </div>
             </div>
-            <div class="headline">
-                A Perfect E-commerce Solution
-            </div>
-        </div>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="content_1">
-        <div class="windows">
-            <img src="./FckYouWindows.jpg">
-        </div>
-        <div class="text_1">
-            <div>
-                <p>Windows: the only OS that updates right when you need to work, eats your RAM like a starved beast,
-                    and still asks if you’re sure you want to open Task Manager. Enjoy forced reboots, bloated spyware,
-                    and an OS that slows down just by existing. Meanwhile, Linux users are customizing, optimizing, and
-                    actually owning their machines. Stay stuck with Windows—or wake up and embrace real computing.</p>
-            </div>
-            <div>
-                <button id="readmore">Read More</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="content_2">
-        <div class="para">
-            <h1>Welcome To Our Website !</h1>
-            <p>In the vast digital landscape, servers act as the backbone of the internet, processing millions of
-                requests every second. From simple static websites to complex cloud-based applications, these machines
-                ensure seamless connectivity and data exchange. A single web request can travel through multiple
-                routers, DNS resolvers, and load balancers before reaching its destination. Latency, bandwidth, and
-                packet loss are critical factors that determine network efficiency, while cybersecurity protocols like
-                TLS encryption protect sensitive data in transit.</p>
-            <blockquote>
+    
+            <nav class="navbar">
                 <ul>
-                    <li>Servers efficiently process and distribute data across networks, ensuring seamless communication
-                        and uptime.</li>
-                    <li>Advanced protocols like HTTP/3 and QUIC enhance speed, security, and reliability for modern web
-                        applications.</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-            </blockquote>
-
-            <blockquote>
-                <p>Modern server architectures rely on virtualization, containerization, and distributed computing to optimize performance and scalability. Data centers house thousands of physical servers, running 24/7, consuming vast amounts of energy and requiring sophisticated cooling systems. Edge computing is shifting workloads closer to end-users, reducing response times and improving overall user experience.</p> <br>
-                <p>With the rise of cloud services, traditional on-premises hosting is gradually being replaced by scalable infrastructure-as-a-service (IaaS) solutions. Companies leverage content delivery networks (CDNs) to distribute assets globally, reducing server load and improving accessibility. Meanwhile, protocols like HTTP/3 and QUIC enhance speed and reliability over congested networks. As technology evolves, the demand for high-performance, secure, and resilient server infrastructures continues to grow, shaping the future of the internet.</p>
-            </blockquote>
+            </nav>
         </div>
-
-        <div class="latestNews">
-            <div>
-                <h2>Latest News :</h2>
+    
+        <div class="content_1">
+            <div class="windows">
+                <img src="./FckYouWindows.jpg">
             </div>
-
-            <div class="newsCard">
-                
+            <div class="text_1">
                 <div>
-                    <img class="newsCover" src="./ainews.jpg" style="border-radius: 2px;">
+                    <p>Windows: the only OS that updates right when you need to work, eats your RAM like a starved beast,
+                        and still asks if you’re sure you want to open Task Manager. Enjoy forced reboots, bloated spyware,
+                        and an OS that slows down just by existing. Meanwhile, Linux users are customizing, optimizing, and
+                        actually owning their machines. Stay stuck with Windows—or wake up and embrace real computing.</p>
                 </div>
                 <div>
-                    <div class="dateBox">March 05, 2025</div>
+                    <button id="readmore">Read More</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content_2">
+            <div class="para">
+                <h1>Welcome To Our Website !</h1>
+                <p>In the vast digital landscape, servers act as the backbone of the internet, processing millions of
+                    requests every second. From simple static websites to complex cloud-based applications, these machines
+                    ensure seamless connectivity and data exchange. A single web request can travel through multiple
+                    routers, DNS resolvers, and load balancers before reaching its destination. Latency, bandwidth, and
+                    packet loss are critical factors that determine network efficiency, while cybersecurity protocols like
+                    TLS encryption protect sensitive data in transit.</p>
+                <blockquote>
+                    <ul>
+                        <li>Servers efficiently process and distribute data across networks, ensuring seamless communication
+                            and uptime.</li>
+                        <li>Advanced protocols like HTTP/3 and QUIC enhance speed, security, and reliability for modern web
+                            applications.</li>
+                    </ul>
+                </blockquote>
+    
+                <blockquote>
+                    <p>Modern server architectures rely on virtualization, containerization, and distributed computing to optimize performance and scalability. Data centers house thousands of physical servers, running 24/7, consuming vast amounts of energy and requiring sophisticated cooling systems. Edge computing is shifting workloads closer to end-users, reducing response times and improving overall user experience.</p> <br>
+                    <p>With the rise of cloud services, traditional on-premises hosting is gradually being replaced by scalable infrastructure-as-a-service (IaaS) solutions. Companies leverage content delivery networks (CDNs) to distribute assets globally, reducing server load and improving accessibility. Meanwhile, protocols like HTTP/3 and QUIC enhance speed and reliability over congested networks. As technology evolves, the demand for high-performance, secure, and resilient server infrastructures continues to grow, shaping the future of the internet.</p>
+                </blockquote>
+            </div>
+    
+            <div class="latestNews">
+                <div>
+                    <h2>Latest News :</h2>
+                </div>
+    
+                <div class="newsCard">
+                    
                     <div>
-                        <p>AI Breakthrough: Researchers develop a self-learning AI that optimizes code, reducing execution time by 40% without human intervention.</p>
+                        <img class="newsCover" src="./ainews.jpg" style="border-radius: 2px;">
+                    </div>
+                    <div>
+                        <div class="dateBox">March 05, 2025</div>
+                        <div>
+                            <p>AI Breakthrough: Researchers develop a self-learning AI that optimizes code, reducing execution time by 40% without human intervention.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="newsCard">
-                
-                <div>
-                    <img class="newsCover" src="./quantumInternetNews.jpg" style="border-radius: 2px;">
-                </div>
-                <div>
-                    <div class="dateBox">March 05, 2025</div>
+                <div class="newsCard">
+                    
                     <div>
-                        <p>Quantum Internet: Scientists achieve stable quantum entanglement over 500 km, paving the way for ultra-secure, near-instant global communication networks.</p>
+                        <img class="newsCover" src="./quantumInternetNews.jpg" style="border-radius: 2px;">
+                    </div>
+                    <div>
+                        <div class="dateBox">March 05, 2025</div>
+                        <div>
+                            <p>Quantum Internet: Scientists achieve stable quantum entanglement over 500 km, paving the way for ultra-secure, near-instant global communication networks.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="newsCard">
-                
-                <div>
-                    <img class="newsCover" src="./batterynews.jpg" >
-                </div>
-                <div>
-                    <div class="dateBox">March 05, 2025</div>
+                <div class="newsCard">
+                    
                     <div>
-                        <p>Battery Revolution: New graphene-based battery charges in 60 seconds, lasts 10 years, and eliminates lithium dependency, transforming mobile and EV industries.</p>
+                        <img class="newsCover" src="./batterynews.jpg" >
+                    </div>
+                    <div>
+                        <div class="dateBox">March 05, 2025</div>
+                        <div>
+                            <p>Battery Revolution: New graphene-based battery charges in 60 seconds, lasts 10 years, and eliminates lithium dependency, transforming mobile and EV industries.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    
 </body>
 
 </html>
