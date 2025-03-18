@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web_Des Lab_13_B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Gujarati:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Gujarati:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/20d1f2c902.js" crossorigin="anonymous"></script>
 
@@ -15,6 +25,7 @@
             font-family: Arial, sans-serif;
             font-size: 16px;
             line-height: 1.6;
+            background-color: grey;
         }
 
         .container {
@@ -24,13 +35,12 @@
 
         .header {
             position: relative;
-            width: 100vw;
             padding: 20px;
-            height: 200px;
             background-color: black;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .head-left {
@@ -53,8 +63,20 @@
         }
 
         .logo-name {
-            font-size: 32px;
+            font-size: 48px;
             color: white;
+            font-family: 'Pacifico', sans-serif;
+
+        }
+
+        .few-links {
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         #download-button {
@@ -64,17 +86,188 @@
             padding-left: 16px;
             padding-right: 16px;
             color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background-color: rgb(32, 196, 255);
+            font-family: 'Josefin sans', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(79, 173, 255);
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
         }
 
-        
+        .main-content {
+            margin: 20px 120px;
+            max-width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .banner {
+            position: relative;
+            max-width: 100%;
+            background-image: url(all_event.jpg);
+            background-size: cover;
+            background-position: center 40%;
+            display: flex;
+            max-height: 160px;
+            min-height: 160px;
+            height: auto;
+            overflow: hidden;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .banner p {
+            font-family: 'Pacifico', sans-serif;
+            font-size: 4rem;
+            letter-spacing: 3px;
+            color: whitesmoke;
+            text-shadow: 3px 3px 4px black;
+            margin: 0;
+        }
+
+        .card-container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: whitesmoke;
+            max-width: 300px;
+            max-height: auto;
+        }
+
+        .date {
+            font-family: 'Josefin sans', sans-serif;
+            font-size: 16px;
+            color: rgb(116, 116, 116);
+            /* padding-top: 10x;
+            padding-bottom: 10px; */
+        }
+
+        .heading {
+            font-family: 'Josefin sans', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .hashtags {
+            font-family: 'Josefin sans', sans-serif;
+            font-size: 16px;
+            color: rgb(116, 116, 116);
+        }
+
+        .discrp {
+            font-family: 'Josefin sans', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(116, 116, 116);
+        }
+
+        .card-content {
+            box-sizing: border-box;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card-content p {
+            margin: 0;
+        }
+
+        .card-img {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .seemore-button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .seemore-button button {
+            margin: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: white;
+            font-family: 'Josefin sans', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(79, 173, 255);
+            border: none;
+            border-radius: 40px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1062px) {
+            .main-content {
+                margin: 20px 40px;
+            }
+
+            .header {
+                justify-content: center;
+            }
+
+            .logo-name p {
+                font-size: 36px;
+            }
+
+            .banner p {
+                font-size: 2.5rem;
+            }
+
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .head-right {
+                justify-content: center;
+            }
+
+            .main-content {
+                margin: 20px 20px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            #download-button,
+            .seemore-button button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+
+            .banner p {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        
+
         <div class="header">
             <div class="head-left">
                 <div class="logo-PNG">
@@ -86,7 +279,7 @@
             </div>
 
             <div class="head-right">
-                <div>
+                <div class="few-links">
                     <div>HTML Templates</div>
                     <div>More HTML Templates</div>
                 </div>
@@ -94,17 +287,122 @@
                     <button id="download-button">DOWNLOAD NOW</button>
                 </div>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-reddit"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-youtube fa-lg" style="color: rgb(79, 173, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook fa-lg" style="color: rgb(79, 173, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-google-plus fa-lg"
+                            style="color: rgb(79, 173, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: rgb(79, 173, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram fa-lg"
+                            style="color: rgb(79, 173, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-reddit fa-lg" style="color: rgb(79, 173, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg" style="color: rgb(79, 173, 255);"></i></a>
                 </div>
             </div>
         </div>
 
+        <div class="main-content">
+            <div class="banner">
+                <p>ALL EVENT</p>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="nightLaserShow.jpg" alt="night laser show img">
+                    </div>
+                    <div class="card-content">
+                        <div class="date">
+                            <p>10/05/2018</p>
+                        </div>
+                        <div class="heading">
+                            <p>Night Laser Show</p>
+                        </div>
+                        <div class="hashtags">
+                            <p>#hip-hop #rnb #dance</p>
+                        </div>
+                        <div class="discrp">
+                            <p>We are happy to announce this special laser show.</p>
+                        </div>
+                    </div>
+
+                    <div class="seemore-button">
+                        <button>See More...</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="liveMusic.jpg" alt="Live Music img">
+                    </div>
+                    <div class="card-content">
+                        <div class="date">
+                            <p>14/05/2018</p>
+                        </div>
+                        <div class="heading">
+                            <p>Live Music</p>
+                        </div>
+                        <div class="hashtags">
+                            <p>#live #rock #alternative</p>
+                        </div>
+                        <div class="discrp">
+                            <p>Special event for our rockr fans! Live music show.</p>
+                        </div>
+                    </div>
+
+                    <div class="seemore-button">
+                        <button>See More...</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="DJ.jpg" alt="dj masterclass img">
+                    </div>
+                    <div class="card-content">
+                        <div class="date">
+                            <p>10/04/2018</p>
+                        </div>
+                        <div class="heading">
+                            <p>DJ - Master Class</p>
+                        </div>
+                        <div class="hashtags">
+                            <p>#dj #master-class</p>
+                        </div>
+                        <div class="discrp">
+                            <p>DJ WoodSmell will teach you some new tricks: Please sign up.</p>
+                        </div>
+                    </div>
+
+                    <div class="seemore-button">
+                        <button>See More...</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="nightParty.jpg" alt="Best Night Party img">
+                    </div>
+                    <div class="card-content">
+                        <div class="date">
+                            <p>10/04/2018</p>
+                        </div>
+                        <div class="heading">
+                            <p>Best Night Party</p>
+                        </div>
+                        <div class="hashtags">
+                            <p>#party #club</p>
+                        </div>
+                        <div class="discrp">
+                            <p>Our traditional event: best hits all night long.</p>
+                        </div>
+                    </div>
+
+                    <div class="seemore-button">
+                        <button>See More...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
